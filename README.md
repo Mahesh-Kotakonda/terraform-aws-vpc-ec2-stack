@@ -60,7 +60,7 @@ This project uses **Terraform** to provision a complete AWS VPC setup with publi
 ---
 
 ## 🗂️ Project Structure
-
+<pre> \`\`\`
 terraform-infra-pro/
 ├── modules/
 │   ├── vpc/                  # Creates the custom VPC with CIDR block
@@ -97,4 +97,4 @@ terraform-infra-pro/
 │       └── userdata.sh
 └── README.md                 # Project documentation
 
-
+ \`\`\` </pre>
