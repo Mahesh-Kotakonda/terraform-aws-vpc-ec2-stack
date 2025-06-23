@@ -11,7 +11,7 @@ module "vpc" {
 module "networking" {
   source = "../../modules/networking"
   vpc_id          = module.vpc.vpc_id
-  name            = "myproject"
+  name            = "dev_env"
 
   public_subnets  = { for idx, subnet in module.vpc.public_subnet_ids : tostring(idx) => subnet }
   private_subnets = { for idx, subnet in module.vpc.private_subnet_ids : tostring(idx) => subnet }
