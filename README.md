@@ -63,19 +63,19 @@ This project uses **Terraform** to provision a complete AWS VPC setup with publi
 
 terraform-infra-pro/
 ├── modules/
-│   ├── vpc/                       # Creates the custom VPC with CIDR block
+│   ├── vpc/                  # Creates the custom VPC with CIDR block
 │   │   ├── main.tf
 │   │   ├── variables.tf
 │   │   └── outputs.tf
-│   ├── ec2/                       # Launches EC2 instances in public and private subnets
+│   ├── ec2/                  # Launches EC2 instances in public and private subnets
 │   │   ├── main.tf
 │   │   ├── variables.tf
 │   │   └── outputs.tf
-│   ├── security-groups/          # Defines and manages security groups for EC2 and subnets
+│   ├── security-groups/      # Defines and manages security groups
 │   │   ├── main.tf
 │   │   ├── variables.tf
 │   │   └── outputs.tf
-│   └── networking/               # Sets up subnets, route tables, IGW, NAT gateways
+│   └── networking/           # Sets up subnets, route tables, IGW, NAT gateways
 │       ├── main.tf
 │       ├── variables.tf
 │       └── outputs.tf
@@ -95,5 +95,6 @@ terraform-infra-pro/
 │       ├── variables.tf
 │       ├── outputs.tf
 │       └── userdata.sh
-└── README.md                     # Project documentation
+└── README.md                 # Project documentation
+
 
